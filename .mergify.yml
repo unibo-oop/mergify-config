@@ -1,5 +1,7 @@
-pull_request_rules:
+merge_protections_settings:
+  reporting_method: check-runs
 
+pull_request_rules:
   - name: Auto-update with merge if appropriately labeled
     conditions:
       - label=auto-update-merge
@@ -49,4 +51,4 @@ pull_request_rules:
       - -conflict
     actions:
       rebase:
-        bot_account: danysk
+        bot_account: pianinator
